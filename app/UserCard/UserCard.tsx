@@ -58,7 +58,6 @@ const UserCard: React.FC<{
             src={`https://api.dicebear.com/7.x/initials/svg?seed=${user.name}`}
             alt={user.name}
             className={styles.avatar}
-            style={{ marginRight: "20px", marginLeft: "50px" }}
           />
         </Anchor>
         <div>
