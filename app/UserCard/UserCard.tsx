@@ -53,6 +53,7 @@ const UserCard: React.FC<{
           rel="noopener noreferrer"
           underline="hover"
           c="#868e96"
+          style={{marginLeft:'100px'}}
         >
           <Avatar
             src={`https://api.dicebear.com/7.x/initials/svg?seed=${user.name}`}
