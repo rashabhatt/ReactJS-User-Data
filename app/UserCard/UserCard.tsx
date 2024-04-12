@@ -47,12 +47,20 @@ const UserCard: React.FC<{
   return (
     <div>
       <Card shadow="sm" padding="lg" className={styles.card}>
-        <Avatar
-          src={`https://api.dicebear.com/7.x/initials/svg?seed=${user.name}`}
-          alt={user.name}
-          className={styles.avatar}
-          style={{ marginRight: "20px" }}
-        />
+        <Anchor
+          href={`http://${user.website}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          underline="hover"
+          c="#868e96"
+        >
+          <Avatar
+            src={`https://api.dicebear.com/7.x/initials/svg?seed=${user.name}`}
+            alt={user.name}
+            className={styles.avatar}
+            style={{ marginRight: "20px", marginLeft: "50px" }}
+          />
+        </Anchor>
         <div>
           <div>
             <Text
